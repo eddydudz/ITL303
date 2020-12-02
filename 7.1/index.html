@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,200);
+ctx.stroke();
+</script>
+
+<br>
+
+<canvas id="myCanvas2" width="200" height="200"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas2");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+
+<br>
+
+<canvas id="myCanvas3" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas3");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial";
+ctx.strokeText("ED SELDURA",20,100);
+</script>
+
+<br>
+
+<canvas id="myCanvas4" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,200);
+ctx.lineTo(200,0);
+ctx.stroke();
+</script>
+
+<br>
+
+<canvas id="myCanvas5" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas5");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,180,180);
+</script>
+
+<br>
+
+<canvas id="myCanvas6" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas6");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,180,180);
+</script>
+
+<br>
+
+<canvas id="myCanvas7" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas7");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,200);
+ctx.stroke();
+ctx.moveTo(0,200);
+ctx.lineTo(200,0);
+ctx.stroke();
+</script>
+
+<br>
+
+<canvas id="myCanvas8" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas8");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"green");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,180,180);
+ctx.font = "25px Arial";
+ctx.strokeText("ED SELDURA",20,100);
+</script>
+
+</body>
+</html>
